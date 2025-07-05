@@ -25,8 +25,7 @@ public class Categoria implements Serializable {
     private String rutaImagen;
     private boolean activo;
 
-<<<<<<< HEAD
-=======
+
     @OneToMany
     @JoinColumn(name = "id_categoria", updatable=false)
     List<Producto> productos;
@@ -34,7 +33,7 @@ public class Categoria implements Serializable {
     public Categoria() {
     }
 
->>>>>>> df8f51e (Guardando cambios antes de rebase)
+
     public Categoria(String descripcion, boolean activo) {
         this.descripcion = descripcion;
         this.activo = activo;
@@ -43,6 +42,6 @@ public class Categoria implements Serializable {
     return activo;
 }
 }
-<<<<<<< HEAD
+
 
 
