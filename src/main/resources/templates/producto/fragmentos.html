@@ -41,7 +41,7 @@
                             <div class="modal-body">
                                 <div class="mb-3">
                                     <label for="idCategoria">[[#{producto.categoria}]]</label>
-                                    <select name="categoria.idCategoria"
+                                    <select name="idCategoria"
                                             class="form-select">
                                         <option th:each="c : ${categorias}" th:value="${c.idCategoria}" th:text="${c.descripcion}">
                                         </option>    
@@ -82,7 +82,7 @@
             </div>
         </section>
 
-       <!-- 3 Sección principal para mostrar la informaccion de la entidad producto -->​
+        <!-- 3 Sección principal para mostrar la informaccion de la entidad producto -->​
         <section th:fragment="listadoProductos" id="productos">​
             <div class="container">​
                 <div class="row">​
@@ -198,7 +198,7 @@
                                                            th:field="*{activo}">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="imagen">[[#{producto.rutaImagen}]]</label>
+                                                    <label for="imagen">[[#{producto.imagen}]]</label>
                                                     <input class="form-control" type="file" name="imagenFile"
                                                            onchange="readURL(this);" />
                                                     <img id="blah" th:src="@{${producto.rutaImagen}}" alt="your image" height="200"/>
@@ -238,4 +238,3 @@
         </section>
     </body>
 </html>
-
