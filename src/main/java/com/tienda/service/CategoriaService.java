@@ -24,6 +24,9 @@ public interface CategoriaService {
     
     // Se elimina el categoria que tiene el id pasado por parámetro
     public void delete(Categoria categoria);
+    
+    //Lista de productos utilizando consultas con JPQL    
+    public List<Categoria> metodoJPQL(String descripcion);
    
 }
 

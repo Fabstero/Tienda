@@ -46,4 +46,10 @@ public class CategoriaServiceImpl implements CategoriaService {
         categoriaDao.delete(categoria);
     }
     
+    @Override
+    @Transactional(readOnly = true)
+    public List<Categoria> metodoJPQL(String descripcion) {
+        return categoriaDao.metodoJPQL(descripcion);
+    }
+
 }

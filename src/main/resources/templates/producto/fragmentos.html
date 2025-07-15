@@ -214,7 +214,7 @@
         </section>
 
         <!-- 5 Fragmento que se utiliza en el fragmento anterior -->
-        <section th:fragment="botonesEditar">
+        <section th:fragment="botonesEditar"  >
             <div class="container py-4 mb-4 bg-light">
                 <div class="row">
                     <div class="col-md-4 d-grid">
@@ -224,7 +224,7 @@
                     </div>
                     <div class="col-md-4 d-grid">                                
                         <a th:href="@{/producto/eliminar/}+${producto.idProducto}"
-                           class="btn btn-danger">
+                           class="btn btn-danger" >
                             <i class="fas fa-trash"></i> [[#{accion.eliminar}]]
                         </a>
                     </div>

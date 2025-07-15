@@ -89,4 +89,13 @@ public class PruebasController {
         return "/pruebas/listado2";
     }
 
+    @PostMapping("/query4")
+    public String consultaQuery4(@RequestParam("existencias") int existencias, Model model) {
+        var productos = productoService.metodoNativo1(existencias);
+        model.addAttribute("productos", productos);
+        model.addAttribute("totalProductos", productos.size());
+        model.addAttribute("existencias", existencias);
+        return "/pruebas/listado2";
+    }
+
 }
